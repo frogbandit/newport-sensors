@@ -11,7 +11,7 @@ import './styles.css';
 function App() {
   return (
     <div className="app">
-      <Router>
+      <Router basename="/newport-sensors">
         <Header />
         <main>
           <Routes>
