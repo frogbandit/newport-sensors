@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/newport-sensors/static/css/main.5eabce3b.css",
+    "main.css": "/newport-sensors/static/css/main.8c9661c1.css",
     "main.js": "/newport-sensors/static/js/main.e003d3a9.js",
     "static/js/488.f5a7268a.chunk.js": "/newport-sensors/static/js/488.f5a7268a.chunk.js",
     "static/media/bridgeImage.jpg": "/newport-sensors/static/media/bridgeImage.d33b340da3c66eaa1395.jpg",
     "index.html": "/newport-sensors/index.html",
-    "main.5eabce3b.css.map": "/newport-sensors/static/css/main.5eabce3b.css.map",
+    "main.8c9661c1.css.map": "/newport-sensors/static/css/main.8c9661c1.css.map",
     "main.e003d3a9.js.map": "/newport-sensors/static/js/main.e003d3a9.js.map",
     "488.f5a7268a.chunk.js.map": "/newport-sensors/static/js/488.f5a7268a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5eabce3b.css",
+    "static/css/main.8c9661c1.css",
     "static/js/main.e003d3a9.js"
   ]
 }
