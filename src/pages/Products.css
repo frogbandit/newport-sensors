@@ -33,7 +33,7 @@
     line-height: 1.8;
     color: var(--text-color);
     margin-bottom: 2rem;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .product-grid {
@@ -64,5 +64,13 @@
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-color);
-    text-align: justify;
+    /* text-align: justify; */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+        /* Single-column layout */
+    }
 }
