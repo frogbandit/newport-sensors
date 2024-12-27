@@ -49,7 +49,7 @@ main {
     padding: 2rem;
 }
 
-/* Header */
+/* Global Header Styles */
 header {
     background-color: var(--primary-color);
     color: var(--background-color);
@@ -63,18 +63,38 @@ header {
 header .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    white-space: nowrap;
+    /* Prevents text wrapping */
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+    /* Space between links */
 }
 
 header nav a {
     color: var(--background-color);
     text-decoration: none;
-    margin: 0 1rem;
     font-weight: 500;
     transition: color 0.3s ease;
+    font-size: 1rem;
+    /* Default font size */
 }
 
 header nav a:hover {
     color: var(--accent-color);
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        /* Stack the logo and navigation vertically */
+        text-align: center;
+        /* Center-align text */
+        padding: 1rem;
+    }
 }
 
 /* Footer */
