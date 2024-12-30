@@ -9,7 +9,7 @@
 
 /* Title of the products page */
 .products-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     /* Increased for emphasis */
     color: var(--primary-color);
     font-weight: bold;

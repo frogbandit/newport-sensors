@@ -17,8 +17,10 @@ const Products = () => {
                 </div>
                 <div className="product-card">
                     <p>
-                        In the United States, approximately 1,705 train derailments occur annually, with axle bearing failures being a major contributing factor. Current wayside monitoring stations, typically placed 30 miles apart, often fail to detect bearing failures in time to prevent derailments.
-                        The <strong>BFA OSC™</strong> system addresses this issue with compact, easy-to-install wireless sensors that provide continuous, real-time monitoring of each bearing. When a bearing begins to fail, the system instantly alerts users via their mobile devices, enabling prompt action to prevent accidents.
+                        In the United States, approximately 1,705 train derailments occur annually, with axle bearing failures being a major contributing factor.
+                        Current wayside monitoring stations, typically placed 30 miles apart, often fail to detect bearing failures in time to prevent derailments.
+                        The <strong>BFA OSC™</strong> system addresses this issue with compact, easy-to-install wireless sensors that provide continuous, real-time monitoring of each bearing.
+                        When a bearing begins to fail, the system instantly alerts users via their mobile devices, enabling prompt action to prevent accidents.
                     </p>
                 </div>
             </div>
@@ -30,8 +32,10 @@ const Products = () => {
                 </div>
                 <div className="product-card">
                     <p>
-                        The <strong>HazPak OSC™</strong> system features small, wireless sensor tags that attach to hazardous material (HazMat) packages. These tags enable seamless retrieval of critical HazMat information, continuous remote monitoring, and real-time safety alerts, ensuring secure transportation by truck, train, plane, or vessel.
-                        Designed to enhance HazMat transportation safety, the HazPak OSC™ system continuously tracks hazardous materials in transit, providing early warnings and immediate response capabilities for potential risks.
+                        The <strong>HazPak OSC™</strong> tackles two critical safety challenges in the transportation of hazardous materials (Hazmat): the limitations of physical labels and the absence of real-time incident alerts.
+                        Physical labels are susceptible to damage and mislabeling, which can significantly impede emergency response efforts and result in environmental disasters.
+                        HazPak OSC introduces compact, wireless sensor tags that integrate electronic ID and sensors, designed to be easily attached to Hazmat packages.
+                        This innovative system dramatically improves the accuracy of Hazmat labeling while enabling, for the first time, timely detection of package failures and real-time incident alerts. By addressing these vulnerabilities, HazPak OSC effectively prevents mishaps and ensures safer handling of hazardous materials.
                     </p>
                 </div>
             </div>
@@ -43,8 +47,9 @@ const Products = () => {
                 </div>
                 <div className="product-card">
                     <p>
-                        The <strong>DoorSafe OSC™</strong> system detects platform locations to prevent the accidental opening of train doors on the incorrect side.
-                        It enhances passenger safety at stations by providing precise, real-time location detection.
+                        Accidents occur when passengers fall onto live tracks due to train doors opening on the wrong side at stations.
+                        <strong>DoorSafe OSC™</strong> addresses this critical safety issue by introducing compact wireless sensors that are easily attachable to any train.
+                        These sensors detect the presence of platforms and prevent the accidental opening of doors that do not face a platform.
                     </p>
                 </div>
             </div>
