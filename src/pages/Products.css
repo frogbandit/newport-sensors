@@ -1,3 +1,4 @@
+/* Container for the entire products page */
 .products-container {
     padding: 2rem;
     text-align: center;
@@ -6,25 +7,25 @@
     background-color: var(--background-color);
 }
 
-.products-container h1 {
+/* Title of the products page */
+.products-title {
     font-size: 2.5rem;
+    /* Increased for emphasis */
     color: var(--primary-color);
+    font-weight: bold;
     margin-bottom: 2rem;
 }
 
+/* Each product category block */
 .product-category {
     margin-bottom: 3rem;
 }
 
-/* Add more space before the E-HazID™ section */
-.product-category.ehazid {
-    margin-top: 4rem;
-    /* Adjust spacing as needed */
-}
-
 .product-category h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    /* Slightly larger headings */
     color: var(--primary-color);
+    font-weight: bold;
     margin-bottom: 1rem;
 }
 
@@ -32,45 +33,87 @@
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--text-color);
-    margin-bottom: 2rem;
-    /* text-align: justify; */
+    margin-bottom: 1.5rem;
 }
 
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+/* Image container styling */
+.image-container {
+    position: relative;
+    width: 60%;
+    margin: 0 auto 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Subtle shadow */
 }
 
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    /* Rounded corners */
+    margin-top: 2rem;
+}
+
+/* Individual product cards */
 .product-card {
     padding: 1.5rem;
     background-color: var(--secondary-color);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    margin: 0 auto;
+    margin-top: 2rem;
+    max-width: 800px;
+    /* Prevent cards from being too wide */
 }
 
 .product-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    /* Slightly deeper shadow on hover */
 }
 
 .product-card h3 {
     font-size: 1.5rem;
+    /* Increased for better emphasis */
     color: var(--primary-color);
     margin-bottom: 1rem;
+    font-weight: bold;
 }
 
 .product-card p {
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-color);
-    /* text-align: justify; */
+    text-align: justify;
+    /* Align text for better readability */
 }
 
-/* Responsive Design for Smaller Screens */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .product-grid {
-        grid-template-columns: 1fr;
-        /* Single-column layout */
+    .image-container {
+        width: 90%;
+        /* Adjust to 90% width on smaller screens */
+    }
+
+    .product-card {
+        max-width: 100%;
+        /* Expand cards to full width on smaller screens */
+        padding: 1rem;
+        /* Slightly reduced padding */
+    }
+
+    .product-category h2 {
+        font-size: 1.5rem;
+        /* Adjusted for smaller screens */
+    }
+
+    .product-card h3 {
+        font-size: 1.2rem;
+        /* Adjusted card heading size */
     }
 }

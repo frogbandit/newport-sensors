@@ -1,36 +1,109 @@
+/* About Page Container */
 .about-container {
-    max-width: 800px;
-    margin: 2rem auto;
     padding: 2rem;
-    background-color: var(--background-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.about-container h1 {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
     text-align: center;
-}
-
-.about-container h2 {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-top: 1.5rem;
-}
-
-.about-container p,
-.about-container ul {
-    line-height: 1.8;
-    font-size: 1.1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--background-color);
     color: var(--text-color);
 }
 
-.about-container ul {
-    padding-left: 1.5rem;
+/* About Title */
+.about-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-weight: bold;
 }
 
-.about-container li {
+/* About Description */
+.about-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Sections within About */
+.about-section {
+    margin-bottom: 3rem;
+}
+
+.about-section h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* List Styling */
+.about-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about-list li {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    /* Align list items to the center */
+    max-width: 800px;
+    width: 90%;
+    /* Ensure elements take up most of the width */
+}
+
+/* Contact Section */
+.contact-section {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    line-height: 1.8;
     margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.contact-details a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+
+    .about-list li {
+        width: 100%;
+        /* Full width for smaller screens */
+    }
+
+    .contact-details p {
+        font-size: 1rem;
+    }
 }

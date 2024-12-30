@@ -1,3 +1,4 @@
+/* Global Container */
 .home-container {
     padding: 2rem;
     text-align: center;
@@ -5,38 +6,101 @@
     color: var(--text-color);
 }
 
-.home-hero h1 {
-    font-size: 2.5rem;
-    color: var(--text-color);
-    margin-bottom: 0.5rem;
+/* Hero Section */
+.home-hero {
+    margin-bottom: 2rem;
 }
 
-.home-hero .highlight {
-    color: var(--accent-color);
+.home-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 2rem;
 }
 
-.home-hero .tagline {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
-.home-mission {
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: var(--secondary-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
+/* Image Section */
 .home-image {
     margin-top: 2rem;
 }
 
-.home-image img {
+.image-container {
+    position: relative;
     width: 50%;
-    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 10px;
-    margin: 1rem auto;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
     display: block;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .image-container {
+        width: 100%; /* Adjust to 100% on smaller screens */
+    }
+}
+
+.image-credit {
+    margin-top: 0.5rem;
+    font-size: 0.5rem;
+    color: #888;
+}
+
+.image-credit a {
+    color: #888;
+    text-decoration: none;
+}
+
+.image-credit a:hover {
+    text-decoration: underline;
+}
+
+/* Details Section */
+
+.home-details h2 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+
+/* Home Details Section */
+.home-details {
+    margin: 2rem auto;
+    max-width: 1200px; /* Increased width */
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* CTA Button Section */
+.cta-button-container {
+    margin: 2rem 0; /* Add space above and below the button */
+    text-align: center; /* Center the button */
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline for links */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05);
 }
