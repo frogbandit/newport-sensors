@@ -8,7 +8,7 @@ const Products = () => {
     return (
         <div className="products-container">
             <h1 className="products-title">
-            Onboard Sensing and Communication (OSC™) <span className="highlight">Products</span>
+                Onboard Sensing and Communication (OSC™) <span className="highlight">Products</span>
             </h1>
             <div className="product-category">
                 <h2>Bearing Failure Alerts (BFA) <span className="highlight">OSC™</span></h2>
@@ -17,8 +17,8 @@ const Products = () => {
                 </div>
                 <div className="product-card">
                     <p>
-                        The <strong>BFA OSC™</strong> is a compact, low-power wireless sensor that provides continuous monitoring of each bearing, including parameters such as temperature and vibration. Sensor data is transmitted to a server via an onboard control unit, enabling both onboard and remote monitoring.
-                        Real-time alerts help detect bearing failures early, preventing train derailments and ensuring passenger and cargo safety.
+                        In the United States, approximately 1,705 train derailments occur annually, with axle bearing failures being a major contributing factor. Current wayside monitoring stations, typically placed 30 miles apart, often fail to detect bearing failures in time to prevent derailments.
+                        The <strong>BFA OSC™</strong> system addresses this issue with compact, easy-to-install wireless sensors that provide continuous, real-time monitoring of each bearing. When a bearing begins to fail, the system instantly alerts users via their mobile devices, enabling prompt action to prevent accidents.
                     </p>
                 </div>
             </div>
