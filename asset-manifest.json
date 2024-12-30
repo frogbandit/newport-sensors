@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/newport-sensors/static/css/main.d6b0582d.css",
-    "main.js": "/newport-sensors/static/js/main.e003d3a9.js",
+    "main.css": "/newport-sensors/static/css/main.483170c4.css",
+    "main.js": "/newport-sensors/static/js/main.988acbee.js",
     "static/js/488.f5a7268a.chunk.js": "/newport-sensors/static/js/488.f5a7268a.chunk.js",
-    "static/media/bridgeImage.jpg": "/newport-sensors/static/media/bridgeImage.d33b340da3c66eaa1395.jpg",
+    "static/media/homeImage.jpg": "/newport-sensors/static/media/homeImage.43a53be1a9f06c5a7dce.jpg",
+    "static/media/doorSafeOscImage.png": "/newport-sensors/static/media/doorSafeOscImage.d54b39e5605684252ebc.png",
+    "static/media/hazPakOscImage.png": "/newport-sensors/static/media/hazPakOscImage.1a139d9fffa6ba2bd539.png",
+    "static/media/bfaOscImage.jpg": "/newport-sensors/static/media/bfaOscImage.d54479632012f9aa97fa.jpg",
+    "static/media/newportSensorsLogo.jpg": "/newport-sensors/static/media/newportSensorsLogo.05cbbb1eed2a94f5ca55.jpg",
     "index.html": "/newport-sensors/index.html",
-    "main.d6b0582d.css.map": "/newport-sensors/static/css/main.d6b0582d.css.map",
-    "main.e003d3a9.js.map": "/newport-sensors/static/js/main.e003d3a9.js.map",
+    "main.483170c4.css.map": "/newport-sensors/static/css/main.483170c4.css.map",
+    "main.988acbee.js.map": "/newport-sensors/static/js/main.988acbee.js.map",
     "488.f5a7268a.chunk.js.map": "/newport-sensors/static/js/488.f5a7268a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6b0582d.css",
-    "static/js/main.e003d3a9.js"
+    "static/css/main.483170c4.css",
+    "static/js/main.988acbee.js"
   ]
 }
