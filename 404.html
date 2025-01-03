@@ -9,7 +9,7 @@
         // Redirect to index.html and let React Router handle the route
         console.log(window.location.pathname);
         console.log(window.location.search);
-        window.location.replace("/newport-sensors" + window.location.pathname + window.location.search);
+        window.location.replace("/" + window.location.pathname + window.location.search);
     </script>
 </head>
 
@@ -18,3 +18,19 @@
 </body>
 
 </html>
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+        // Redirect to the base URL with the current path preserved
+        var redirectPath = window.location.pathname + window.location.search;
+        window.location.href = "/" + redirectPath;
+    </script>
+</head>
+<body>
+    Redirecting...
+</body>
+</html> -->
