@@ -1,106 +1,122 @@
 /* Global Container */
 .home-container {
-    padding: 2rem;
-    text-align: center;
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
-
-/* Hero Section */
-.home-hero {
-    margin-bottom: 2rem;
-}
-
-.home-title {
-    font-size: 2rem;
-    color: var(--primary-color);
-    font-weight: 600;
-    margin-bottom: 2rem;
-}
-
-/* Image Section */
-.home-image {
-    margin-top: 2rem;
-}
-
-.image-container {
     position: relative;
-    width: 50%;
-    margin: 0 auto;
+    height: 100vh;
+    /* Full viewport height */
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
-    overflow: hidden;
+    justify-content: flex-start;
+    /* Move content towards the top */
+    background: url("../assets/homeImage.jpg") no-repeat center center/cover;
+    color: var(--background-color);
+    padding-top: 10vh;
+    /* Add top padding for spacing */
+    padding-bottom: 5vh;
+    /* Ensure there is space below the text */
 }
 
-.image-container img {
+/* Mask overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    display: block;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay for better contrast */
+    z-index: 1;
+    /* Ensures the mask is behind the content */
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .image-container {
-        width: 100%; /* Adjust to 100% on smaller screens */
-    }
+/* Content Section */
+.home-content {
+    position: relative;
+    z-index: 2;
+    /* Ensures content appears above the overlay */
+    text-align: center;
+    max-width: 90%;
+    /* Limit content width */
+    color: var(--background-color);
+    margin-top: 5vh;
+    /* Add margin to separate text from the very top */
 }
 
-.image-credit {
-    margin-top: 0.5rem;
-    font-size: 0.5rem;
-    color: #888;
-}
-
-.image-credit a {
-    color: #888;
-    text-decoration: none;
-}
-
-.image-credit a:hover {
-    text-decoration: underline;
+/* Hero Title */
+.home-title {
+    font-size: 3rem;
+    /* Larger font size for title */
+    margin-bottom: 1.5rem;
+    color: var(--background-color);
+    /* Light text for contrast */
+    font-weight: 700;
 }
 
 /* Details Section */
-
-.home-details h2 {
-    font-size: 2.2rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-
-/* Home Details Section */
-.home-details {
-    margin: 2rem auto;
-    max-width: 1200px; /* Increased width */
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 1.8;
+.home-details,
+.home-footer {
+    font-size: 1.5rem;
+    /* Consistent font size with paragraph text */
+    line-height: 2;
+    /* Consistent line height */
+    margin-bottom: 2rem;
+    color: var(--background-color);
 }
 
 /* CTA Button Section */
 .cta-button-container {
-    margin: 2rem 0; /* Add space above and below the button */
-    text-align: center; /* Center the button */
+    margin-top: 2rem;
 }
 
 .cta-button {
     background-color: var(--accent-color);
     color: var(--background-color);
     padding: 1rem 2rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    /* Slightly larger button font size */
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    text-decoration: none; /* Remove underline for links */
+    text-decoration: none;
+    /* Remove underline for links */
     transition: background-color 0.3s ease, transform 0.2s ease;
-    display: inline-block;
 }
 
 .cta-button:hover {
-    background-color: var(--accent-color);
+    background-color: #991b1e;
     transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-container {
+        padding-top: 7vh;
+        /* Move text further up on smaller screens */
+        padding-bottom: 5vh;
+    }
+
+    .home-content {
+        max-width: 95%;
+        /* Slightly reduce content width for small screens */
+        margin-top: 4vh;
+        /* Adjust spacing for smaller screens */
+    }
+
+    .home-title {
+        font-size: 2rem;
+        /* Smaller title for smaller screens */
+    }
+
+    .home-details,
+    .home-footer {
+        font-size: 1rem;
+        /* Smaller font size for mobile */
+        line-height: 1.6;
+        /* Adjust line height for compact readability */
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        /* Adjust button font size */
+    }
 }
