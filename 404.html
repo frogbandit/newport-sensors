@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        // Redirect to index.html while preserving the original path and query string
-        const path = window.location.pathname + window.location.search;
-        window.location.replace("/newport-sensors/index.html" + "?redirect=" + encodeURIComponent(path));
+        // Redirect to index.html and let React Router handle the route
+        console.log(window.location.pathname);
+        console.log(window.location.search);
+        window.location.replace("/newport-sensors" + window.location.pathname + window.location.search);
     </script>
 </head>
 
