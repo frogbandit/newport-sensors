@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        // Only redirect if the current path does not already contain /newport-sensors
-        if (!window.location.pathname.startsWith("/newport-sensors")) {
-            const newUrl = "/newport-sensors/index.html" + window.location.pathname + window.location.search;
-            window.location.replace(newUrl);
-        }
+        // Redirect to index.html while preserving the original path and query string
+        const path = window.location.pathname + window.location.search;
+        window.location.replace("/newport-sensors/index.html" + "?redirect=" + encodeURIComponent(path));
     </script>
 </head>
 
