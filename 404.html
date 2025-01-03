@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        // Redirect to index.html and let React Router handle the route
-        console.log(window.location.pathname);
-        console.log(window.location.search);
-        window.location.replace("https://newportsensors.com" + window.location.pathname + window.location.search);
+        // Ensure redirection only occurs when necessary
+        if (!window.location.pathname.startsWith("/newport-sensors")) {
+            const targetUrl = "https://newportsensors.com/newport-sensors" + window.location.pathname + window.location.search;
+            // console.log("Redirecting to:", targetUrl);
+            window.location.replace(targetUrl);
+        } else {
+            console.log("No redirection needed:", window.location.href);
+        }
     </script>
 </head>
 
@@ -18,19 +22,3 @@
 </body>
 
 </html>
-
-<!-- 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="refresh" content="0; url=/" />
-    <script>
-        // Redirect to the base URL with the current path preserved
-        var redirectPath = window.location.pathname + window.location.search;
-        window.location.href = "/" + redirectPath;
-    </script>
-</head>
-<body>
-    Redirecting...
-</body>
-</html> -->
