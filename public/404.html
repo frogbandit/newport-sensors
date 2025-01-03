@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
     <script>
-        // Get the current path and query string
-        var redirectPath = window.location.pathname + window.location.search;
-
-        // Redirect to the root, ensuring the correct path is appended
-        window.location.href = "/" + redirectPath.replace(/^\/+/, "");
+        // Check if we're already at the root index.html with a route appended
+        if (!window.location.pathname.includes("index.html")) {
+            // Redirect to index.html and preserve the path and query
+            const newUrl = "/newport-sensors" + window.location.pathname + window.location.search;
+            window.location.replace(newUrl);
+        }
     </script>
 </head>
 
