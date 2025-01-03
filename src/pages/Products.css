@@ -92,6 +92,20 @@
     /* Align text for better readability */
 }
 
+/* Specific styling for DoorSafe OSC image */
+.image-container.doorsafe {
+    width: 50%;
+    /* Reduce size for DoorSafe image */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-container.doorsafe {
+        width: 70%;
+        /* Adjust size for smaller screens */
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .image-container {
