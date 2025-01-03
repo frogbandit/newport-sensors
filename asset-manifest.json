@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2876e90b.css",
-    "main.js": "/static/js/main.1cacf946.js",
+    "main.css": "/static/css/main.3888e5ff.css",
+    "main.js": "/static/js/main.9973bcab.js",
     "static/js/488.f5a7268a.chunk.js": "/static/js/488.f5a7268a.chunk.js",
     "static/media/homeImage.jpg": "/static/media/homeImage.43a53be1a9f06c5a7dce.jpg",
     "static/media/doorSafeOscImage.png": "/static/media/doorSafeOscImage.d54b39e5605684252ebc.png",
@@ -9,12 +9,12 @@
     "static/media/bfaOscImage.jpg": "/static/media/bfaOscImage.d54479632012f9aa97fa.jpg",
     "static/media/newportSensorsLogo.jpg": "/static/media/newportSensorsLogo.05cbbb1eed2a94f5ca55.jpg",
     "index.html": "/index.html",
-    "main.2876e90b.css.map": "/static/css/main.2876e90b.css.map",
-    "main.1cacf946.js.map": "/static/js/main.1cacf946.js.map",
+    "main.3888e5ff.css.map": "/static/css/main.3888e5ff.css.map",
+    "main.9973bcab.js.map": "/static/js/main.9973bcab.js.map",
     "488.f5a7268a.chunk.js.map": "/static/js/488.f5a7268a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2876e90b.css",
-    "static/js/main.1cacf946.js"
+    "static/css/main.3888e5ff.css",
+    "static/js/main.9973bcab.js"
   ]
 }
