@@ -8,7 +8,7 @@
     <script>
         // Ensure redirection only occurs when necessary
         if (!window.location.pathname.startsWith("/newport-sensors")) {
-            const targetUrl = "https://newportsensors.com/newport-sensors" + window.location.pathname + window.location.search;
+            const targetUrl = "https://newportsensors.com" + window.location.pathname + window.location.search;
             // console.log("Redirecting to:", targetUrl);
             window.location.replace(targetUrl);
         } else {
