@@ -7,10 +7,12 @@
     <title>Redirecting...</title>
     <script>
         // Ensure redirection only occurs when necessary
+        console.log(window)
         if (!window.location.pathname.startsWith("/newport-sensors")) {
             const targetUrl = "https://newportsensors.com" + window.location.pathname + window.location.search;
-            // console.log("Redirecting to:", targetUrl);
+            console.log("Redirecting to:", targetUrl);
             window.location.replace(targetUrl);
+            throw "Deliberate Error!";
         } else {
             console.log("No redirection needed:", window.location.href);
         }
