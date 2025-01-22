@@ -9,6 +9,7 @@
         // Get the current pathname and query string
         const pathname = window.location.pathname.replace(/^\/newport-sensors/, "");
         const search = window.location.search;
+        console.log(window.location.pathname);
 
         // Redirect only if not already within /newport-sensors
         if (!window.location.pathname.startsWith("/newport-sensors")) {
