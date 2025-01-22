@@ -7,7 +7,8 @@
     <title>Redirecting...</title>
     <script>
         // Ensure redirection only occurs when necessary
-        console.log(window)
+        console.log(window.location);
+        console.log(window.location.href.includes("https://newportsensors.com"));
         if (!window.location.href.includes("https://newportsensors.com")) {
             const targetUrl = "https://newportsensors.com" + window.location.pathname + window.location.search;
             console.log("Redirecting to:", targetUrl);
