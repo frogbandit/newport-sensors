@@ -9,7 +9,7 @@
         // Check if the user is already on the correct base path
         if (!window.location.pathname.startsWith("/newport-sensors")) {
             const newPath = window.location.pathname.replace(/^\/index.html/, ""); // Remove any `/index.html` from the path
-            const redirectUrl = "https://newportsensors.com/newport-sensors" + newPath + window.location.search;
+            const redirectUrl = "https://newportsensors.com" + newPath + window.location.search;
             console.log("Redirecting to:", redirectUrl);
             window.location.replace(redirectUrl);
         } else {
