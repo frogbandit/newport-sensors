@@ -6,15 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        // Ensure redirection only occurs when necessary
-        console.log(window.location)
+        // Redirect to index.html and let React Router handle the route
+        const redirectUrl = window.location.origin + "/newport-sensors/index.html";
+        const newPath = window.location.pathname + window.location.search;
         if (!window.location.pathname.startsWith("/newport-sensors")) {
-            const targetUrl = "https://newportsensors.com" + window.location.pathname + window.location.search;
-            console.log("Redirecting to:", targetUrl);
-            window.location.replace(targetUrl);
-            throw 'Deliberate Error!'
-        } else {
-            console.log("No redirection needed:", window.location.href);
+            window.location.replace(redirectUrl + newPath);
         }
     </script>
 </head>
