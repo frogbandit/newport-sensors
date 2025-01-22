@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        // Redirect to index.html and let React Router handle the route
-        const redirectUrl = window.location.origin + "/newport-sensors/index.html";
-        const newPath = window.location.pathname + window.location.search;
+        // Get the current pathname and query string
+        const pathname = window.location.pathname.replace(/^\/newport-sensors/, "");
+        const search = window.location.search;
+
+        // Redirect only if not already within /newport-sensors
         if (!window.location.pathname.startsWith("/newport-sensors")) {
-            window.location.replace(redirectUrl + newPath);
+            const redirectUrl = "https://newportsensors.com/newport-sensors/index.html" + pathname + search;
+            console.log("Redirecting to:", redirectUrl);
+            window.location.replace(redirectUrl);
+        } else {
+            console.log("Already in the correct base path:", window.location.href);
         }
     </script>
 </head>
